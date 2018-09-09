@@ -76,4 +76,5 @@ names(extractedData)
 #Create a tidy data set
 tidyDataSet <- aggregate(. ~subjectId + activityId, activityNameSet, mean)
 tidyDataSet <- tidyDataSet[order(tidyDataSet$subjectId, tidyDataSet$activityId),]
-
+## Write tidy data set
+write.table(tidyDataSet, "tidyDataSet.txt", row.name=FALSE)
