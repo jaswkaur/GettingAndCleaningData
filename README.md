@@ -30,6 +30,7 @@ Download the zipped file from the location: https://d396qusza40orc.cloudfront.ne
 
 2. Put run_analysis.R in the parent folder of UCI HAR Dataset, then set it as your working directory using setwd() function in RStudio.
 3. Run source("run_analysis.R")
+4. A file named tidyDataSet.txt is generated at the end of the script.
 
 ## Dependencies
 The project makes use of data.table
