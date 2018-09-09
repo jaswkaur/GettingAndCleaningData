@@ -12,7 +12,7 @@ fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%2
 download.file(fileUrl,destfile="./rdata/Dataset.zip")
 
 ##Unzip the files and get the list of files
-unzip(zipfile="./rdata/Dataset.zip",exdir="./data")
+unzip(zipfile="./rdata/Dataset.zip",exdir="./rdata")
 filePath <- file.path("./rdata", "UCI HAR Dataset")
 files<-list.files(filePath, recursive=TRUE)
 files
